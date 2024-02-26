@@ -2,7 +2,7 @@ from flask import Flask
 
 def create_app():
     app=Flask(__name__)
-    app.confug['SECRET_KEY'] = 'draw'
+    app.config['SECRET_KEY'] = 'draw'
 
     from .app import app
     from .auth import auth
